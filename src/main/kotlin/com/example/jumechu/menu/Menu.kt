@@ -12,6 +12,10 @@ data class Menu(
     val name: String,
     @Enumerated(EnumType.STRING)
     var nationality: FoodNationality,
+    @ManyToMany(mappedBy = "menu_like")
+    val likedUsers: List<User>,
+    @ManyToMany(mappedBy = "menu_dislike")
+    val dislikedUsers: List<User>
 )
 
 enum class FoodNationality {
