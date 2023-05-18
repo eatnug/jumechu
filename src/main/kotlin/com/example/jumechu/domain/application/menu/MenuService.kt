@@ -1,5 +1,8 @@
-package com.example.jumechu.menu
+package com.example.jumechu.domain.application.menu
 
+import com.example.jumechu.menu.FoodNationality
+import com.example.jumechu.menu.Menu
+import com.example.jumechu.menu.MenuRepository
 import jakarta.transaction.Transactional
 import org.springframework.stereotype.Service
 

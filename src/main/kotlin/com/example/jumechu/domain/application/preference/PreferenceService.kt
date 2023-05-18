@@ -1,4 +1,4 @@
-package com.example.jumechu.preference
+package com.example.jumechu.domain.application.preference
 
 import com.example.jumechu.menu.MenuRepository
 import com.example.jumechu.user.UserRepository

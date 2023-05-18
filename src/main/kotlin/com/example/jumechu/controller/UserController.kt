@@ -1,5 +1,7 @@
-package com.example.jumechu.user
+package com.example.jumechu.controller
 
+import com.example.jumechu.user.User
+import com.example.jumechu.user.UserService
 import org.springframework.web.bind.annotation.*
 
 

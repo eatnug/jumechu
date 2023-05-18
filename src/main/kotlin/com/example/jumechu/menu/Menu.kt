@@ -16,7 +16,12 @@ data class Menu(
     val likedUsers: List<User>,
     @ManyToMany(mappedBy = "menu_dislike")
     val dislikedUsers: List<User>
-)
+) {
+
+    fun countLiked(likedMenus: Collection<Menu>): Int {
+        likedMenus.count { it.id == id }
+    }
+}
 
 enum class FoodNationality {
     Korean,

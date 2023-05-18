@@ -1,5 +1,6 @@
-package com.example.jumechu.preference
+package com.example.jumechu.controller
 
+import com.example.jumechu.domain.application.preference.PreferenceService
 import org.springframework.web.bind.annotation.PutMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping

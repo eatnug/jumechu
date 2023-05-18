@@ -1,11 +1,11 @@
 package com.example.jumechu.user
 
 import org.springframework.data.jpa.repository.JpaRepository
-import org.springframework.data.jpa.repository.Query
 import org.springframework.stereotype.Repository
 
 @Repository
 interface UserRepository : JpaRepository<User, Long> {
-    @Query("select u from User u where u.name = ?1")
+
+    fun findByIdIn(userIds: Collection<Long>): List<User>
     fun findByName(name: String): User?
 }

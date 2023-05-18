@@ -1,7 +1,7 @@
-package com.example.jumechu.receommendation
+package com.example.jumechu.controller
 
+import com.example.jumechu.domain.application.recommendation.RecommendationService
 import com.example.jumechu.menu.Menu
-import jakarta.websocket.server.PathParam
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
